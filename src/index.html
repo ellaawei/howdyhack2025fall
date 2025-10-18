@@ -4,11 +4,67 @@
   <meta charset="utf-8">
   <title>Decked Out</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="Shortcut Icon" href="http://www.newrafael.com/favicon.ico">
+  <link rel="stylesheet" href="styles.scss" />
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">Decked Out</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link position-relative" [routerLink]="['/checkout']">
+              <i class="bi bi-cart-fil l fs-4"></i>
+              <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="hero">
+    <div class="overlay">
+      <h3>Welcome To DECKED OUT</h3>
+      <h1>CUSTOMIZE A SKATEBOARD!</h1>
+      <a href="#base" class="btn">START HERE</a>
+    </div>
+  </header>
+
+  <!-- ===== Main Sections ===== -->
+  <section id="base" class="section">
+    <div class="container text-center">
+      <h2>Base Section</h2>
+      <p>Choose your skateboard base</p>
+    </div>
+  </section>
+
+  <section id="wheels" class="section bg-light">
+    <div class="container text-center">
+      <h2>Wheels Section</h2>
+      <p>Pick your favorite wheels.</p>
+    </div>
+  </section>
+
+  <section id="wraps" class="section">
+    <div class="container text-center">
+      <h2>Wraps Section</h2>
+      <p>Customize your board with creative wraps and designs.</p>
+    </div>
+  </section>
+
   <app-root></app-root>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
