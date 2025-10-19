@@ -1,7 +1,7 @@
 //hello this is annoying
 
 //here be the images
-export const skateboardImages = {
+const skateboardImages = {
     //popsicle
     "9in_popsicle": "https://www.boardpusher.com/images/product-tn/9-inch-skateboard-shape.jpg?v23",
     "8-3/4in_popsicle": "https://www.boardpusher.com/images/product-tn/875-skateboard-shape.jpg?v23",
@@ -33,7 +33,7 @@ export const skateboardImages = {
 }//images
 
 //here be the "short" descriptions
-export const boardDesc = {
+const boardDesc = {
     //popsicle
     "9in_popsicle": "The nine inch is a wide popsicle shape with a large nose and tail and a 15 inch wheelbase. Ready to shred anything and everything.",
     "8-3/4in_popsicle": "Wide and fast, but still a classic popsicle shape. This deck is a real monster and meant for skaters with big skills or feet, or both. With a 1/4 inch bigger wheelbase than the 8.5 inch posicle, this 8.75 inch feels even more stable at high speeds.",
